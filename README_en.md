@@ -59,20 +59,20 @@ First, open the terminal in your Ubuntu environment. Then, execute all the follo
    cd /web/upload 
    ```
    ![image](https://github.com/ccllabe/HeapMS-Installation-Process/assets/134360047/d04eeec7-571c-4422-8f27-ee31ab2cdc7d)  
-12. 上傳檔案，以下指令需要在(本機端的terminal輸入)
+12. To upload a file, you need to use the following commands in your local terminal:
    ```diff
    sudo scp -P 22034 /home/brojack/Desktop/heapms_dataset/OSCC-1_time_intensity.tsv ccllab@120.126.17.213:/home/ccllab/Downloads 
    ```
    /home/brojack/Desktop/heapms_dataset/OSCC-1_time_intensity.tsv : 要上傳的檔案路徑(本機端)
    ccllab@120.126.17.213:/home/ccllab/Downloads : 檔案要上傳到哪裡(遠端)  
-   #由於我是使用遠端的Ubuntu虛擬機，因此120.126.17.213為虛擬機的ip，22034為虛擬機ip的port number    
-   以下圖片為執行結果
+   #Because I'm using  a remote Ubuntu virtual machine, the IP address "120.126.17.213" represents the IP address of the virtual machine, and "22034" represents the port number of the virtual machine's IP.    
+   The following image shows the execution result:
    ![image](https://github.com/ccllabe/HeapMS-Installation-Process/assets/134360047/91ab04fe-538b-4e60-a4bd-14d7660df61e)  
-   接著在/Downloads 裡就能看到剛剛傳的檔案
+   Afterward, you will be able to see the uploaded file in the '/Downloads' directory.
    ![image](https://github.com/ccllabe/HeapMS-Installation-Process/assets/134360047/f19e3815-b42a-441f-9fbb-c107592205d7)  
-13. 上傳完所有要執行的檔案後，就要把這些檔案移動到一開始建立的container: node1內了
+13. After uploading all the files you want to execute, you need to move these files into the container "node1" that was created initially.
    ![image](https://github.com/ccllabe/HeapMS-Installation-Process/assets/134360047/3945b14f-09d0-45ec-a8b8-668f9b1d55b2)  
-14. 現在開一個新的terminal，連到剛建立好的container: node1
+14. Now, open a new terminal and connect to the previously created container "node1".
    ```diff
    sudo -s
    ```
@@ -80,8 +80,8 @@ First, open the terminal in your Ubuntu environment. Then, execute all the follo
    docker attach node1 
    ```
    ![image](https://github.com/ccllabe/HeapMS-Installation-Process/assets/134360047/3653b33a-c497-4f92-a1a9-4c74936dfacb)  
-15. 在/docker_mount/web/upload/下建立一個資料夾，用來儲存要執行的檔案
-   OSCC-1 : 資料夾名稱，想要叫什麼都可以
+15. Create a directory under /docker_mount/web/upload/ to store the files for execution.
+   OSCC-1 : Folder name，You can name the folder whatever you like.
    ```diff
    mkdir OSCC-1 
    ```
@@ -89,7 +89,7 @@ First, open the terminal in your Ubuntu environment. Then, execute all the follo
    ll
    ```
    ![image](https://github.com/ccllabe/HeapMS-Installation-Process/assets/134360047/aacbf30e-8a78-4e07-85cb-7f0c7b11785a)  
-16. 把/Downlaods內要執行的資料移動到/docker_mount/web/upload/OSCC-1，即剛剛建立的OSCC-1資料夾內
+16. Move the data that needs to be executed from /Downloads to /docker_mount/web/upload/OSCC-1, which is the newly created folder named "OSCC-1".
    ```diff
    docker cp /home/ccllab/Downloads/OSCC-1_human.csv node1:/docker_mount/web/upload/OSCC-1/
    ```
@@ -97,9 +97,9 @@ First, open the terminal in your Ubuntu environment. Then, execute all the follo
    ![image](https://github.com/ccllabe/HeapMS-Installation-Process/assets/134360047/e86a7a28-6a2c-4ca8-89c1-4ebc0cdcd663)  
    /OSCC-1:  
    ![image](https://github.com/ccllabe/HeapMS-Installation-Process/assets/134360047/8dc0e968-f4e1-47c1-9a0a-24972585233f)  
-   都上傳完檔案後，/OSCC-1裡面就會有這些資料，就可以開始跑程式了
+   After uploading all the files, the /OSCC-1 directory will contain the uploaded data, and you can proceed with running the program.
    ![image](https://github.com/ccllabe/HeapMS-Installation-Process/assets/134360047/a03f9a7d-b654-422a-b4e5-31a47f845776)  
-17. 在執行程式前，需要將/OSCC-1裡的那三個檔案改名，改成以下名稱
+17. Before executing the program, you need to rename the three files in /OSCC-1 to the following names:
    ```diff
    mv OSCC-1_human.csv human.csv
    ```
@@ -109,11 +109,11 @@ First, open the terminal in your Ubuntu environment. Then, execute all the follo
    ```diff
    mv OSCC-1_time_intensity.tsv time_intensity.tsv
    ```
-   改完後會像下面這張圖片一樣的檔案名稱
+   After renaming, the file names in /OSCC-1 will appear as shown in the following image:
    ![image](https://github.com/ccllabe/HeapMS-Installation-Process/assets/134360047/9c3f69d7-0257-4f81-9246-c0215c4d6077)  
-   #若沒有修改那三個檔案名稱，就會無法執行程式!  
-## 開始執行程式  
-18. 回到 /docker_mount/web/ 的位置，裡面會有這些執行的程式
+   #If the names of those three files are not modified, it will not be able to execute the program. 
+## Start executing the program.  
+18. Go back to the location /docker_mount/web/, and you will find the programs for execution inside.
    ```diff
    cd /docker_mount/web/
    ```
@@ -121,18 +121,18 @@ First, open the terminal in your Ubuntu environment. Then, execute all the follo
    ll
    ```
    ![image](https://github.com/ccllabe/HeapMS-Installation-Process/assets/134360047/2bf42654-be3c-4fde-8d7d-ed5b723bc470)
-19. 執行exe.py這隻程式
+19. Execute the program "exe.py".
    ```diff
    python3 exe.py upload OSCC-1
    ```
-   exe.py : 這支程式會自動執行1-13支程式。
-   upload OSCC-1: 儲存要執行的檔案位置。
-   #若想要一支一支程式執行看輸出結果，就將exe.py換成要執行的那隻程式，如下:
+   exe.py : This program will automatically execute programs 1 to 13.
+   upload OSCC-1: The files to be executed will be stored here.
+   #If you want to execute each program one by one and see the output results, replace "exe.py" with the specific program you want to execute, as follows:
    ```diff
    python3 1_rmTQN_format_trans.py upload OSCC-1
    ```
-   路徑/upload/OSCC-1，如下圖
+   Path: /upload/OSCC-1, as shown in the following image:
    ![image](https://github.com/ccllabe/HeapMS-Installation-Process/assets/134360047/d128d9d2-ed36-4db2-8f5c-56789ea860af)  
-20. 有顯示成下面這張圖的樣子，就代表執行成功了
+20. If it is displayed in a format similar to the image below, it means that the execution was successful.
    ![image](https://github.com/ccllabe/HeapMS-Installation-Process/assets/134360047/a0229880-e151-4286-a927-04ff8ce78b11)
 
