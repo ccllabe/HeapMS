@@ -5,7 +5,7 @@
    ```diff
    sudo apt-get update  
    ```
-3. 移除舊有的docker環境  
+2. 移除舊有的docker環境  
    ```diff
    sudo apt-get remove docker docker-engine docker.io   
    ```
