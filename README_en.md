@@ -1,11 +1,11 @@
 # HeapMS-Installation-Process
-首先在你的Ubuntu環境下開啟terminal，接著執行以下所有指令及操作:
-## 安裝環境   
-1. 更新  
+First, open the terminal in your Ubuntu environment. Then, execute all the following commands and operations:
+## Installing the environment   
+1. Update  
    ```diff
    sudo apt-get update  
    ```
-3. 移除舊有的docker環境  
+. To remove the existing Docker environment.  
    ```diff
    sudo apt-get remove docker docker-engine docker.io   
    ```
