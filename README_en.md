@@ -5,47 +5,47 @@ First, open the terminal in your Ubuntu environment. Then, execute all the follo
    ```diff
    sudo apt-get update  
    ```
-2. To remove the existing Docker environment.  
+2. Remove the existing Docker environment.  
    ```diff
    sudo apt-get remove docker docker-engine docker.io   
    ```
-3. 安裝新的docker環境  
+3. Install a new Docker environment.  
    ```diff
    sudo apt install docker.io   
    ```
-4. 執行docker環境  
+4. Run the Docker environment.  
    ```diff
    sudo service docker start    
    ```
-   做到這裡，你就可以執行docker指令了!
+   At this point, you will be able to execute Docker commands.
    ![image](https://github.com/ccllabe/HeapMS-Installation-Process/assets/134360047/b48a5e90-ceec-4df7-a1bd-99485926fb62)
-5. 找出pc4_heapms.tar這個檔案在你的電腦儲存的位置絕對路徑
+5. Find the absolute file path of the "pc4_heapms.tar" file stored on your computer.
    ```diff
    realpath pc4_heapms.tar    
    ```
    ![image](https://github.com/ccllabe/HeapMS-Installation-Process/assets/134360047/ab24823c-d153-4bde-bd3f-052551412e32)
-6. 將pc4_heapms.tar製作成docker image
+6. Create a Docker image through the "pc4_heapms.tar" file. 
    ```diff
    docker load < /home/ccllab/Downloads/pc4_heapms.tar    
    ```
-   執行完後會如同以下:
+   After executing the command, the result will be as follows:
    ![image](https://github.com/ccllabe/HeapMS-Installation-Process/assets/134360047/5924ad5e-039a-4f8a-a5f4-6ac92103ce80)
-7. 查看pc4_heapms.tar有沒有成功製作成docker image
+7. To check if the "pc4_heapms.tar" has been successfully created as a Docker image, you can use the following command:
    ```diff
    docker images   
    ```
    ![image](https://github.com/ccllabe/HeapMS-Installation-Process/assets/134360047/87472e98-b8c2-46c8-8982-98961e8e4051)
-8. 創建一個名為node1的container，若成功創建container: node1，則會顯示以下內容
+8. To create a container named "node1," use the following command. If the container creation is successful, you will see the following output:
    ```diff
    sudo docker run -t -i --name node1 pc4_heapms:latest /bin/bash   
    ```
    ![image](https://github.com/ccllabe/HeapMS-Installation-Process/assets/134360047/5f5c46d0-6cd5-4927-88c0-40f5b2585503)
-9. 查看該container: node1 是否有/docker_mount這個路徑
+9. To check if the container "node1" has the /docker_mount path, you can use the following command:
    ```diff
    ll  
    ```
    ![image](https://github.com/ccllabe/HeapMS-Installation-Process/assets/134360047/e102f704-bc7a-40c3-81e2-8d0de5dd5a49)
-10. 使用以下兩個指令，檢查/docker_mount是否有以下模型及路徑
+10. To check if the container "node1" has the /docker_mount path, you can use the following command:
    ```diff
    cd /docker_mount  
    ```
@@ -53,8 +53,8 @@ First, open the terminal in your Ubuntu environment. Then, execute all the follo
    ll  
    ```
    ![image](https://github.com/ccllabe/HeapMS-Installation-Process/assets/134360047/e6f4fbd7-514a-446f-b29f-e84890187978)
-## 上傳檔案  
-11. 接下來cd到這個目錄/docker_mount/web/upload，準備上傳要執行的data
+## Upload files
+11. Next, use the 'cd' command to navigate to the directory /docker_mount/web/upload in order to prepare for uploading the data you want to execute.
    ```diff
    cd /web/upload 
    ```
