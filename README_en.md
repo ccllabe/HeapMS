@@ -63,8 +63,8 @@ First, open the terminal in your Ubuntu environment. Then, execute all the follo
    ```diff
    sudo scp -P 22034 /home/brojack/Desktop/heapms_dataset/OSCC-1_time_intensity.tsv ccllab@120.126.17.213:/home/ccllab/Downloads 
    ```
-   /home/brojack/Desktop/heapms_dataset/OSCC-1_time_intensity.tsv : 要上傳的檔案路徑(本機端)
-   ccllab@120.126.17.213:/home/ccllab/Downloads : 檔案要上傳到哪裡(遠端)  
+   /home/brojack/Desktop/heapms_dataset/OSCC-1_time_intensity.tsv : Path of the file to be uploaded (local machine):
+   ccllab@120.126.17.213:/home/ccllab/Downloads : Location where the file should be uploaded (remote machine):  
    #Because I'm using  a remote Ubuntu virtual machine, the IP address "120.126.17.213" represents the IP address of the virtual machine, and "22034" represents the port number of the virtual machine's IP.    
    The following image shows the execution result:
    ![image](https://github.com/ccllabe/HeapMS-Installation-Process/assets/134360047/91ab04fe-538b-4e60-a4bd-14d7660df61e)  
