@@ -5,7 +5,7 @@ First, open the terminal in your Ubuntu environment. Then, execute all the follo
    ```diff
    sudo apt-get update  
    ```
-. To remove the existing Docker environment.  
+2. To remove the existing Docker environment.  
    ```diff
    sudo apt-get remove docker docker-engine docker.io   
    ```
