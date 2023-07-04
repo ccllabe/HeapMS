@@ -20,7 +20,7 @@
    做到這裡，你就可以執行docker指令了!
    ![image](https://github.com/ccllabe/HeapMS-Installation-Process/assets/134360047/b48a5e90-ceec-4df7-a1bd-99485926fb62)
 5. 找出pc4_heapms.tar這個檔案在你的電腦儲存的位置絕對路徑  
-   下載 pc4_heapms.tar: [http://120.126.17.206/pc4_heapms.tar](https://1drv.ms/u/s!AsDRU0McIwlzm6hf7yQ69WEFIS7Flw?e=xSnYFn)
+   下載 pc4_heapms.tar (file size: ~60GB): (https://onedrive.live.com/?authkey=%21AO8kOvVhBSEuxZc&id=7309231C4353D1C0%21447583&cid=7309231C4353D1C0&parId=root&parQt=sharedby&o=OneUp) 
    ```diff
    realpath pc4_heapms.tar    
    ```
