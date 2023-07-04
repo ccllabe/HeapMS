@@ -20,7 +20,7 @@ First, open the terminal in your Ubuntu environment. Then, execute all the follo
    At this point, you will be able to execute Docker commands.
    ![image](https://github.com/ccllabe/HeapMS-Installation-Process/assets/134360047/b48a5e90-ceec-4df7-a1bd-99485926fb62)
 5. Find the absolute file path of the "pc4_heapms.tar" file stored on your computer.  
-   Download pc4_heapms.tar link: [[http://120.126.17.206/pc4_heapms.tar](https://1drv.ms/u/s!AsDRU0McIwlzm6hf7yQ69WEFIS7Flw?e=xSnYFn)](https://onedrive.live.com/?authkey=%21AO8kOvVhBSEuxZc&id=7309231C4353D1C0%21447583&cid=7309231C4353D1C0&parId=root&parQt=sharedby&o=OneUp)
+   Download pc4_heapms.tar(file size: ~60GB)) link: [[http://120.126.17.206/pc4_heapms.tar](https://1drv.ms/u/s!AsDRU0McIwlzm6hf7yQ69WEFIS7Flw?e=xSnYFn)](https://onedrive.live.com/?authkey=%21AO8kOvVhBSEuxZc&id=7309231C4353D1C0%21447583&cid=7309231C4353D1C0&parId=root&parQt=sharedby&o=OneUp) 
    ```diff
    realpath pc4_heapms.tar    
    ```
