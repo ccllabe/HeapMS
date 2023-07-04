@@ -20,33 +20,34 @@ First, open the terminal in your Ubuntu environment. Then, execute all the follo
    At this point, you will be able to execute Docker commands.
    ![image](https://github.com/ccllabe/HeapMS-Installation-Process/assets/134360047/b48a5e90-ceec-4df7-a1bd-99485926fb62)
 5. Find the absolute file path of the "pc4_heapms.tar" file stored on your computer.  
-   Download pc4_heapms.tar (file size: ~60GB) link: (https://onedrive.live.com/?authkey=%21AO8kOvVhBSEuxZc&id=7309231C4353D1C0%21447583&cid=7309231C4353D1C0&parId=root&parQt=sharedby&o=OneUp) 
+   Download pc4_heapms.tar (file size: ~60GB) link:  
+   (https://onedrive.live.com/?authkey=%21AO8kOvVhBSEuxZc&id=7309231C4353D1C0%21447583&cid=7309231C4353D1C0&parId=root&parQt=sharedby&o=OneUp) 
    ```diff
    realpath pc4_heapms.tar    
    ```
    ![image](https://github.com/ccllabe/HeapMS-Installation-Process/assets/134360047/ab24823c-d153-4bde-bd3f-052551412e32)
-6. Create a Docker image through the "pc4_heapms.tar" file. 
+7. Create a Docker image through the "pc4_heapms.tar" file. 
    ```diff
    docker load < /home/ccllab/Downloads/pc4_heapms.tar    
    ```
    After executing the command, the result will be as follows:
    ![image](https://github.com/ccllabe/HeapMS-Installation-Process/assets/134360047/5924ad5e-039a-4f8a-a5f4-6ac92103ce80)
-7. To check if the "pc4_heapms.tar" has been successfully created as a Docker image, you can use the following command:
+8. To check if the "pc4_heapms.tar" has been successfully created as a Docker image, you can use the following command:
    ```diff
    docker images   
    ```
    ![image](https://github.com/ccllabe/HeapMS-Installation-Process/assets/134360047/87472e98-b8c2-46c8-8982-98961e8e4051)
-8. To create a container named "node1," use the following command. If the container creation is successful, you will see the following output:
+9. To create a container named "node1," use the following command. If the container creation is successful, you will see the following output:
    ```diff
    sudo docker run -t -i --name node1 pc4_heapms:latest /bin/bash   
    ```
    ![image](https://github.com/ccllabe/HeapMS-Installation-Process/assets/134360047/5f5c46d0-6cd5-4927-88c0-40f5b2585503)
-9. To check if the container "node1" has the /docker_mount path, you can use the following command:
+10. To check if the container "node1" has the /docker_mount path, you can use the following command:
    ```diff
    ll  
    ```
    ![image](https://github.com/ccllabe/HeapMS-Installation-Process/assets/134360047/e102f704-bc7a-40c3-81e2-8d0de5dd5a49)
-10. To check if the container "node1" has the /docker_mount path, you can use the following command:
+11. To check if the container "node1" has the /docker_mount path, you can use the following command:
    ```diff
    cd /docker_mount  
    ```
