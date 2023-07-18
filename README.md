@@ -1,3 +1,6 @@
+```diff
+- Announcement: Scheduled power outage on July 23, 2023
+ ```
 # HeapMS-Installation-Process
 First, open the terminal in your Ubuntu environment. Then, execute all the following commands and operations:
 ## Installing the environment   
