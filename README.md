@@ -1,3 +1,4 @@
+<font size=5 color=RED>Announcement: Scheduled power outage on July 23, 2023</font> 
 ```diff
 - Announcement: Scheduled power outage on July 23, 2023
  ```
