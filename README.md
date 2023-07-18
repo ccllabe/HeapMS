@@ -1,5 +1,4 @@
-<span style="color:red">这是一个红色文本。</span>
-```diff
+#```diff
 - Announcement: Scheduled power outage on July 23, 2023
  ```
 # HeapMS-Installation-Process
