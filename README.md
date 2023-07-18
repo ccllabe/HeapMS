@@ -1,4 +1,4 @@
-#```diff
+```diff
 - Announcement: Scheduled power outage on July 23, 2023
  ```
 # HeapMS-Installation-Process
