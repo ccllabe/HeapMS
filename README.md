@@ -1,7 +1,4 @@
 # HeapMS-Installation-Process
-```diff
-- HeapMS website: http://120.126.17.186  
-```
 - HeapMS website: http://120.126.17.186  
 First, open the terminal in your Ubuntu environment. Then, execute all the following commands and operations:
 ## Installing the environment   
