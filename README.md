@@ -23,8 +23,8 @@ First, open the terminal in your Ubuntu environment. Then, execute all the follo
 5. Find the absolute file path of the "pc4_heapms.tar" or "pc1_node1.tar.gz" file stored on your computer.  
    Download pc4_heapms.tar (file size: ~60GB) link:  
    (https://onedrive.live.com/?authkey=%21AO8kOvVhBSEuxZc&id=7309231C4353D1C0%21447583&cid=7309231C4353D1C0&parId=root&parQt=sharedby&o=OneUp)  
-   Download pc1_node1.tar.gz (with four colors, file size: ~86.4GB) link:  
-   (https://1drv.ms/u/s!AsDRU0McIwlzm6sTqfwEThh4kKHKiQ?e=LE4EA7)
+   Download pc1_node1.tar (with four colors, file size: ~86.4GB) link:  
+   (https://1drv.ms/u/s!AsDRU0McIwlzndMOeFzy4ux6JuOKOw?e=ggUhk3)
    ```diff
    realpath pc4_heapms.tar    
    ```
