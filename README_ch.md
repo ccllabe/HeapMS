@@ -19,34 +19,39 @@
    ```
    做到這裡，你就可以執行docker指令了!
    ![image](https://github.com/ccllabe/HeapMS-Installation-Process/assets/134360047/b48a5e90-ceec-4df7-a1bd-99485926fb62)
-5. 找出pc4_heapms.tar這個檔案在你的電腦儲存的位置絕對路徑  
+5. 找出 "pc4_heapms.tar" or "heapms_new.tar"檔案在你的電腦儲存的位置絕對路徑  
    下載 pc4_heapms.tar (file size: ~60GB): (https://onedrive.live.com/?authkey=%21AO8kOvVhBSEuxZc&id=7309231C4353D1C0%21447583&cid=7309231C4353D1C0&parId=root&parQt=sharedby&o=OneUp) 
    ```diff
    realpath pc4_heapms.tar    
    ```
+   下載 heapms_new.tar (with four colors, file size: ~33.23GB) 連結:
+   https://onedrive.live.com/?authkey=%21AG8MPsmwIyBenxU&id=7309231C4353D1C0%21502588&cid=7309231C4353D1C0&parId=root&parQt=sharedby&o=OneUp
+   ```diff
+   realpath heapms_new.tar   
+   ```
    ![image](https://github.com/ccllabe/HeapMS-Installation-Process/assets/134360047/ab24823c-d153-4bde-bd3f-052551412e32)
-6. 將pc4_heapms.tar製作成docker image
+7. 將pc4_heapms.tar製作成docker image
    ```diff
    docker load < /home/ccllab/Downloads/pc4_heapms.tar    
    ```
    執行完後會如同以下:
    ![image](https://github.com/ccllabe/HeapMS-Installation-Process/assets/134360047/5924ad5e-039a-4f8a-a5f4-6ac92103ce80)
-7. 查看pc4_heapms.tar有沒有成功製作成docker image
+8. 查看pc4_heapms.tar有沒有成功製作成docker image
    ```diff
    docker images   
    ```
    ![image](https://github.com/ccllabe/HeapMS-Installation-Process/assets/134360047/87472e98-b8c2-46c8-8982-98961e8e4051)
-8. 創建一個名為node1的container，若成功創建container: node1，則會顯示以下內容
+9. 創建一個名為node1的container，若成功創建container: node1，則會顯示以下內容
    ```diff
    sudo docker run -t -i --name node1 pc4_heapms:latest /bin/bash   
    ```
    ![image](https://github.com/ccllabe/HeapMS-Installation-Process/assets/134360047/5f5c46d0-6cd5-4927-88c0-40f5b2585503)
-9. 查看該container: node1 是否有/docker_mount這個路徑
+10. 查看該container: node1 是否有/docker_mount這個路徑
    ```diff
    ll  
    ```
    ![image](https://github.com/ccllabe/HeapMS-Installation-Process/assets/134360047/e102f704-bc7a-40c3-81e2-8d0de5dd5a49)
-10. 使用以下兩個指令，檢查/docker_mount是否有以下模型及路徑
+11. 使用以下兩個指令，檢查/docker_mount是否有以下模型及路徑
    ```diff
    cd /docker_mount  
    ```
