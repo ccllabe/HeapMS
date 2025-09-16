@@ -22,12 +22,12 @@ First, open the terminal in your Ubuntu environment. Then, execute all the follo
    ![image](https://github.com/ccllabe/HeapMS-Installation-Process/assets/134360047/b48a5e90-ceec-4df7-a1bd-99485926fb62)
 5. Find the absolute file path of the "pc4_heapms.tar" or "heapms_new.tar" file stored on your computer.  
    Download pc4_heapms.tar (file size: ~60GB) link:  
-   (https://onedrive.live.com/?authkey=%21AO8kOvVhBSEuxZc&id=7309231C4353D1C0%21447583&cid=7309231C4353D1C0&parId=root&parQt=sharedby&o=OneUp)
+   (https://drive.google.com/file/d/1kmADCPadxtB0sbh_hLb71NSXZYerJSiF/view?usp=drive_link)
    ```diff
    realpath pc4_heapms.tar
    ```
    Download heapms_new.tar (with four colors, file size: ~33.23GB) link:  
-   [https://onedrive.live.com/?authkey=%21AG8MPsmwIyBenxU&id=7309231C4353D1C0%21502588&cid=7309231C4353D1C0&parId=root&parQt=sharedby&o=OneUp](https://drive.google.com/file/d/1og3wA-lDm-Sj4ntCDTaPX3kjZ5xP25c5/view?usp=drive_link)
+   [(https://drive.google.com/file/d/1og3wA-lDm-Sj4ntCDTaPX3kjZ5xP25c5/view?usp=drive_link](https://drive.google.com/file/d/1og3wA-lDm-Sj4ntCDTaPX3kjZ5xP25c5/view?usp=drive_link)
    ```
    realpath heapms_new.tar
    ```
